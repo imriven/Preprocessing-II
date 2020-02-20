@@ -1,15 +1,13 @@
 // Navigation Styles here
 
-@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
-
-@header: 'Lacquer', sans-serif;
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
+    .flex();
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin: 4% 0;
+    
     
     h1 {
  
@@ -17,15 +15,13 @@ nav {
     }
 
     .links {
-        display: flex;
+        .flex();
         padding: 2%;
-        width: 50%;
+        width: 60%;
 
         a {
             padding: 0 8%;
-            flex-wrap: wrap;
         }
     }
-
     
 }

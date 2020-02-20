@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Lacquer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lacquer Regular'), local('Lacquer-Regular'), url(https://fonts.gstatic.com/s/lacquer/v1/EYqzma1QwqpG4_BBN7iKWg.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,31 +175,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@font-face {
-  font-family: 'Lacquer';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Lacquer Regular'), local('Lacquer-Regular'), url(https://fonts.gstatic.com/s/lacquer/v1/EYqzma1QwqpG4_BBN7iKWg.ttf) format('truetype');
-}
 nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin: 4% 0;
 }
 nav h1 {
   width: 20%;
 }
 nav .links {
   display: flex;
+  flex-wrap: wrap;
   padding: 2%;
-  width: 50%;
+  width: 60%;
 }
 nav .links a {
   padding: 0 8%;
-  flex-wrap: wrap;
 }
 .home .content-section {
   margin: 30px 0;
@@ -239,6 +240,30 @@ nav .links a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+#welcome {
+  border-bottom: 2px dashed gray;
+}
+#welcome h2 {
+  margin-top: 3%;
+}
+#welcome p {
+  text-align: justify;
+}
+#welcome .img-bus {
+  border-top: 2px dashed gray;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #238080;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 5% 10%;
+  border-radius: 15px;
+  border: 1px solid gray;
 }
 .footer {
   width: 100%;
