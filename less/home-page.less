@@ -6,19 +6,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+      flex-wrap: nowrap;
+      width: 100%;
     }
+
+  }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+       @media @phone {
+        width: 100%;
+        }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          width: 100%;
+         object-fit: fill;
+        }
+
       }
     }
   }
@@ -26,6 +43,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      width: 100%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,6 +58,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -44,6 +71,14 @@
 
     img {
       border-radius: 10px;
+
+      @media @phone {
+      width: 100%;
+      object-fit: fill;
+      padding-bottom: 15%;
+      border-bottom: @border;
+      }
+
     }
   }
 
@@ -53,9 +88,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      width: 60%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      border: none;
+      padding-bottom: 10%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
     }
     
   }

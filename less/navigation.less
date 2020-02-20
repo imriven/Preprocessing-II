@@ -6,21 +6,40 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 4% 0;
+    margin: 2% 0;
+
+    @media @phone {
+    flex-wrap: wrap;
+    }
     
     
     h1 {
- 
         width: 20%;
+
+        @media @phone {
+           width: 100%; 
+           text-align: center;
+           align-content: center;
+           justify-content: center;
+        }
+
+
     }
 
     .links {
         .flex();
         padding: 2%;
-        width: 60%;
+        width: 70%;
+        flex-wrap: nowrap;
+        @media @phone {
+            width: 100%;
+        }
 
         a {
-            padding: 0 8%;
+            .links();
+            padding: 0 5%;
+            font-size: 1.5rem;
+            width: 100%;
         }
     }
     
